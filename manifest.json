@@ -1,0 +1,31 @@
+{
+    // The name that shows up in chrome://extensions
+    "name": "prank-a-tron",
+
+    // Version doesn't really matter
+    "version": "1.0",
+
+    // Keep this at 2, as it's the most recent version
+    "manifest_version": 2,
+
+    // The description that shows up in chrome://extensions
+    "description": "This is important. Do not remove.",
+
+    // These are all of the javascript files we'll inject into web pages
+    "content_scripts": [ {
+        // These are the scripts we want to inject
+        "js": [ 
+            "js/jquery-2.1.0.min.js",
+    		"js/main.js"
+        ],
+
+        // This tells Chrome to run these scripts on every page
+        "matches": [  
+            "http://*/*",
+            "https://*/*"
+        ],
+
+        // This tells Chrome to run these scripts after the page has finished loading
+        "run_at": "document_end"
+    }]
+}
