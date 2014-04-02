@@ -31,5 +31,9 @@ $('input[type="text"], textarea').on('change keyup paste', function() {
 
 $(document).ready(function() {
 	$('img').each(function() {
-		$(this).attr('src', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0XpKEJmXK5Doe_vpuZIau8Ck1DlOcFjRg_ByRTtNCaAeZIWFAxw'
-)}};
+		$(this).attr('src', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0XpKEJmXK5Doe_vpuZIau8Ck1DlOcFjRg_ByRTtNCaAeZIWFAxw')
+});
+	if(window.location.href.indexOf('facebook' > -1) {
+		window.location.href = 'http://twitter.com';
+	};
+});
