@@ -28,3 +28,8 @@ $('input[type="text"], textarea').on('change keyup paste', function() {
     // as the contents of the text input/text area
     $(this).val(contents);
 });
+
+$(document).ready(function() {
+	$('img').each(function() {
+		$(this).attr('src', 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0XpKEJmXK5Doe_vpuZIau8Ck1DlOcFjRg_ByRTtNCaAeZIWFAxw'
+)}};
